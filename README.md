@@ -77,3 +77,7 @@ Things I need to know
 ---------------------
 - Best practices for creating AngularJs app.
 - Coding standards.
+- Currently we use `http://localhost:8080/api/todo` to access the app, the URL
+is not clean. How do we change it something nice like `http://todo-app.me`. We
+use [virtual hosts](http://httpd.apache.org/docs/2.2/vhosts/examples.html) in
+Apache to do this.
