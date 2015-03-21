@@ -12,8 +12,12 @@ Installation and usage
 - Start the server `node server.js`
 - View in browser at `http://localhost:8080/api/todo`
 
+Services used
+--------------
+- [Modulus.io](https://modulus.io/) for database.
+
 Code has been taken from this tutorial [https://scotch.io/tutorials/creating-a-single-page-todo-app-with-node-and-angular](https://scotch.io/tutorials/creating-a-single-page-todo-app-with-node-and-angular). But I have not copied the exact code.
-The [GitHub](https://github.com/scotch-io/node-todo) was not working for me.
+This [GitHub](https://github.com/scotch-io/node-todo) code was not working for me.
 
 Problems faced
 ---------------
@@ -21,7 +25,7 @@ Problems faced
 	- In GitHub the routing code was like this:
 	```javascript
 	app.get('*', function(req, res) {
-	res.sendfile('./public/index.html');
+		res.sendfile('./public/index.html');
 	});
 	```
 	This means for every request it will load `index.html`
