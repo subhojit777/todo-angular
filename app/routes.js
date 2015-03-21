@@ -52,18 +52,18 @@ module.exports = function(app) {
 
 	// application -------------------------------------------------------------
 	app.get('/api/todo', function(req, res) {
-		res.sendfile('./public/index.html'); // load the single view file (angular will handle the page changes on the front-end)
+		res.sendfile('./public/index.html');
 	});
 
 	app.get('/js/controllers/:name', function(req, res) {
-		res.sendfile(__dirname + '/js/controllers/' + req.params.name); // load the single view file (angular will handle the page changes on the front-end)
+		res.sendfile(__dirname + '/js/controllers/' + req.params.name);
 	});
 
 	app.get('/js/services/:name', function(req, res) {
-		res.sendfile(__dirname + '/js/services/' + req.params.name); // load the single view file (angular will handle the page changes on the front-end)
+		res.sendfile(__dirname + '/js/services/' + req.params.name);
 	});
 
 	app.get('/js/:name', function(req, res) {
-		res.sendfile(__dirname + '/js/' + req.params.name); // load the single view file (angular will handle the page changes on the front-end)
+		res.sendfile(__dirname + '/js/' + req.params.name);
 	});
 };
