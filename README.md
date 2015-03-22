@@ -21,32 +21,6 @@ This [GitHub](https://github.com/scotch-io/node-todo) code was not working for m
 
 Problems faced
 ---------------
-- ExpressJs routing problem.
-	- In GitHub the routing code was like this:
-	```javascript
-	app.get('*', function(req, res) {
-		res.sendfile('./public/index.html');
-	});
-	```
-	This means for every request it will load `index.html`
-	- I changed it to this:
-	```javascript
-	app.get('/api/todo', function(req, res) {
-		res.sendfile('./public/index.html');
-	});
-
-	app.get('/js/controllers/:name', function(req, res) {
-		res.sendfile(__dirname + '/js/controllers/' + req.params.name);
-	});
-
-	app.get('/js/services/:name', function(req, res) {
-		res.sendfile(__dirname + '/js/services/' + req.params.name);
-	});
-
-	app.get('/js/:name', function(req, res) {
-		res.sendfile(__dirname + '/js/' + req.params.name);
-	});
-	```
 - Error while loading AngularJs module.
 	- In GitHub the AngularJs code loading was in this code:
 	```html
