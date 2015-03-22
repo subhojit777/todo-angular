@@ -46,6 +46,7 @@ Things I understood while creating this application
 Things I need to understand more in detail
 -------------------------------------------
 - Purpose of service and controllers in AngularJs
+- Packages used in this application
 
 Things I need to know
 ---------------------
